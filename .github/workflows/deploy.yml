@@ -11,12 +11,12 @@ jobs:
 
     steps:
       -name: Hacer checkout del repositorio
-       uses: actions/checkout@v3
+       uses: action/checkout@v3
       
       - name: Configurar node
         uses: action/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - run: npm install
       - run: npm test
 
