@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Hacer checkout del repositorio
-       uses: action/checkout@v3
+      - name: Hacer checkout del repositorio
+        uses: action/checkout@v3
       
       - name: Configurar node
         uses: action/setup-node@v3
